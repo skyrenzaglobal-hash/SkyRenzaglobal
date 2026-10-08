@@ -2,156 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#04152f">
+<meta name="description" content="SKYRENZA — BPO & Customer Experience Solutions. Build from India. Serve the world.">
 <title>SKYRENZA | BPO & Customer Experience Solutions</title>
-<meta name="description" content="SKYRENZA provides customer support, back-office operations, lead generation, data processing and customer experience solutions for growing businesses.">
-<link rel="stylesheet" href="styles.css">
+<style>
+:root{--bg:#031126;--bg2:#061b3d;--panel:#08234b;--panel2:#0a2b5b;--line:rgba(117,177,255,.2);--text:#f5f8ff;--muted:#b8c8df;--blue:#1e88ff;--blue2:#4db3ff;--red:#ff1744;--max:1180px;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#0b3b77 0,#061d43 28%,var(--bg) 60%);color:var(--text);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}.section{padding:92px 0;border-top:1px solid rgba(255,255,255,.05)}
+header{position:sticky;top:0;z-index:50;background:rgba(2,14,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{width:178px;height:62px;object-fit:cover;object-position:center;border-radius:10px}.links{display:flex;gap:22px;align-items:center;font-size:14px;color:#dce9fb}.links a:hover{color:#fff}.menu{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:10px;padding:9px 11px}
+.hero{min-height:calc(100vh - 76px);display:grid;place-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 70% 40%,rgba(30,136,255,.18),transparent 35%),linear-gradient(125deg,transparent 0 44%,rgba(24,91,180,.1) 44% 45%,transparent 45%);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center;padding:70px 0}.eyebrow{color:#70bcff;letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:16px 0 22px;letter-spacing:-.04em}.hero h1 span{color:#5eb9ff}.hero p{font-size:18px;color:var(--muted);max-width:700px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:12px;font-weight:750;border:1px solid var(--line)}.btn.primary{background:linear-gradient(135deg,#1478ee,#2aa9ff);color:#fff;box-shadow:0 10px 30px rgba(18,117,238,.25)}.btn.secondary{background:rgba(255,255,255,.04)}.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(15,52,103,.9),rgba(4,18,42,.9));border-radius:24px;padding:16px;box-shadow:0 30px 70px rgba(0,0,0,.35)}.hero-card img{display:block;width:100%;border-radius:16px;max-height:530px;object-fit:cover}
+.kicker{max-width:760px;margin-bottom:38px}.kicker h2{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:10px 0 14px}.kicker p{color:var(--muted);font-size:17px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:linear-gradient(160deg,rgba(10,43,91,.9),rgba(4,22,48,.95));border:1px solid var(--line);border-radius:18px;padding:26px}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--muted)}.num{font-size:12px;color:#63b8ff;font-weight:800;letter-spacing:.15em}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 12px;margin:5px 4px 0 0;color:#cfe3ff;background:rgba(255,255,255,.03);font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}.quote{font-size:24px;line-height:1.35;border-left:3px solid #258cff;padding-left:20px;color:#eaf3ff}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.step{padding:20px 16px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.03)}.step strong{display:block;color:#65baff;margin-bottom:7px}.step small{color:var(--muted)}
+.founder{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;align-items:center}.founder img{width:100%;border-radius:22px;border:1px solid var(--line);display:block}.founder .new{box-shadow:0 25px 60px rgba(0,0,0,.35)}.banner{margin-top:24px}.banner img{width:100%;border-radius:22px;border:1px solid var(--line);display:block}.statline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.stat{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}.stat b{font-size:26px;display:block}.stat span{font-size:13px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery figure{margin:0;background:#061a38;border:1px solid var(--line);border-radius:16px;overflow:hidden}.gallery img{width:100%;height:230px;object-fit:cover;display:block}.gallery figcaption{padding:13px 15px;font-size:13px;color:#cfe0f5}.note{font-size:12px;color:#8fa6c3;margin-top:10px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#092b59,#041a37)}.contact a{color:#78c4ff}.footer{padding:30px 0 45px;border-top:1px solid var(--line);color:#91a7c4;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer img{width:150px;height:52px;object-fit:cover;border-radius:8px}
+@media(max-width:900px){.hero-grid,.about,.founder,.contact{grid-template-columns:1fr}.grid3{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.links{display:none}.menu{display:block}.nav.open .links{display:flex;position:absolute;left:4%;right:4%;top:70px;background:#04152f;border:1px solid var(--line);border-radius:14px;padding:16px;flex-direction:column;align-items:flex-start}.hero{min-height:auto}.hero-grid{padding:60px 0}.brand img{width:150px;height:54px}}
+@media(max-width:560px){.section{padding:66px 0}.hero h1{font-size:43px}.hero p{font-size:16px}.grid2,.grid3,.steps,.gallery,.statline{grid-template-columns:1fr}.gallery img{height:240px}.card{padding:22px}.footer-row{flex-direction:column;align-items:flex-start}.brand img{width:138px;height:50px}.buttons .btn{width:100%}}
+</style>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#home" aria-label="SKYRENZA home">
-    <span class="brand-mark">S</span><span>SKYRENZA</span>
-  </a>
-  <button class="menu" aria-label="Open menu">☰</button>
-  <nav class="links">
-    <a href="#solutions">Solutions</a>
-    <a href="#industries">Industries</a>
-    <a href="#technology">Technology</a>
-    <a href="#founder">Founder</a>
-    <a href="#insights">Insights</a>
-    <a class="nav-cta" href="#contact">Talk to SKYRENZA</a>
-  </nav>
-</header>
-
+<header><div class="wrap nav" id="nav"><a class="brand" href="#home" aria-label="SKYRENZA home"><img src="assets/skyrenza-logo.png" alt="SKYRENZA logo"></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#process">How We Work</a><a href="#founder">Founder</a><a href="#gallery">Company</a><a href="#contact">Contact</a></div><button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button></div></header>
 <main id="home">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">BPO • CUSTOMER EXPERIENCE • BUSINESS SUPPORT</p>
-    <h1>Build better customer experiences.<br><span>Scale your operations.</span></h1>
-    <p class="lead">SKYRENZA combines skilled people, disciplined processes and smart technology to help growing businesses deliver dependable customer support and operational performance.</p>
-    <div class="actions">
-      <a class="btn primary" href="#solutions">Explore Solutions</a>
-      <a class="btn secondary" href="#contact">Discuss Your Requirement</a>
-    </div>
-    <div class="hero-trust"><span>People</span><span>Process</span><span>Technology</span><span>Performance</span></div>
-  </div>
-  <div class="hero-card">
-    <div class="glow"></div>
-    <div class="mini-card">
-      <strong>SKYRENZA</strong>
-      <span>Global BPO & Customer Experience Partner</span>
-    </div>
-    <div class="orb"></div>
-  </div>
-</section>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">BPO & Customer Experience Solutions</div><h1>Build from India.<br><span>Serve the world.</span></h1><p>SKYRENZA helps growing businesses build dependable customer operations through capable people, disciplined processes, professional communication and continuous improvement.</p><div class="buttons"><a class="btn primary" href="#contact">Start a Conversation</a><a class="btn secondary" href="#services">Explore Services</a></div><div style="margin-top:22px"><span class="pill">People First</span><span class="pill">Process Driven</span><span class="pill">Scalable</span><span class="pill">Global Mindset</span></div></div><div class="hero-card"><img src="assets/founder-new.jpg" alt="Abhijit Kale, Founder & CEO of SKYRENZA"></div></div></section>
 
-<section class="statement">
-  <div><p class="eyebrow">OUR APPROACH</p><h2>Outsourcing should feel like an extension of your team.</h2></div>
-  <p>Start with a clearly defined requirement. Establish ownership and measurable expectations. Pilot where appropriate. Improve the operation. Scale when the model is proven.</p>
-</section>
+<section class="section" id="about"><div class="wrap"><div class="kicker"><div class="eyebrow">About SKYRENZA</div><h2>A practical outsourcing partner built around your business.</h2><p>SKYRENZA is an India-based BPO and Customer Experience company focused on helping growing businesses build reliable, scalable and people-focused customer operations. We believe outsourcing should be more than transferring tasks: it should create a dependable extension of the client's team.</p></div><div class="about"><div class="card"><h3>Our Vision</h3><p>Build from India. Serve the world.</p><br><h3>Our Mission</h3><p>Help businesses improve customer operations through capable people, disciplined processes and continuous improvement.</p></div><div class="card"><div class="quote">“Outsourcing should be easier to start, easier to manage and easier to scale.”</div><p style="margin-top:18px">We start with clear requirements, defined ownership, measurable expectations and a practical path from pilot to scale.</p></div></div></div></section>
 
-<section id="solutions" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">SOLUTIONS</p><h2>Customer operations, designed around your business.</h2></div>
-    <p>Flexible services that can be delivered individually or combined into a broader customer-operations model.</p>
-  </div>
-  <div class="grid cards">
-    <article><span class="icon">◉</span><h3>Customer Support</h3><p>Voice-based support, query handling, issue resolution and customer communication aligned with your SOPs.</p><small>Voice • Escalations • QA</small></article>
-    <article><span class="icon">✉</span><h3>Email & Chat Support</h3><p>Professional digital communication for questions, requests, follow-ups and service conversations.</p><small>Email • Live Chat • Messaging</small></article>
-    <article><span class="icon">▦</span><h3>Back-Office Operations</h3><p>Structured administrative and process support for repeatable workflows that need consistency and accuracy.</p><small>Admin • Processing • Coordination</small></article>
-    <article><span class="icon">↗</span><h3>Lead Generation</h3><p>Research, prospecting and qualification against client-defined criteria and target markets.</p><small>Research • Qualification • Outreach</small></article>
-    <article><span class="icon">▤</span><h3>Data Processing</h3><p>Data capture, validation, updating and routine processing built around documented workflows.</p><small>Entry • Validation • Reporting</small></article>
-    <article><span class="icon">✦</span><h3>Customer Experience</h3><p>People-focused operations designed to make customer interactions more responsive, consistent and professional.</p><small>Journey • Quality • Improvement</small></article>
-  </div>
-</section>
+<section class="section" id="services"><div class="wrap"><div class="kicker"><div class="eyebrow">Our Services</div><h2>Flexible support for customer-facing and process-driven work.</h2><p>Services can be combined into a tailored engagement based on the client's workflow, volumes, coverage requirements and quality expectations.</p></div><div class="grid3">
+<div class="card"><span class="num">01</span><h3>Customer Support</h3><p>Voice-based customer support, query handling, issue resolution and customer communication aligned to client SOPs.</p></div>
+<div class="card"><span class="num">02</span><h3>Email & Chat Support</h3><p>Professional written support for questions, requests, follow-ups and service communication.</p></div>
+<div class="card"><span class="num">03</span><h3>Back-Office Operations</h3><p>Administrative and process support for structured tasks that require consistency, accuracy and timely completion.</p></div>
+<div class="card"><span class="num">04</span><h3>Lead Generation & Qualification</h3><p>Outbound prospecting support to identify, research and qualify potential customers against agreed criteria.</p></div>
+<div class="card"><span class="num">05</span><h3>Data Entry & Processing</h3><p>Structured data capture, updating, validation and routine processing around client-defined workflows.</p></div>
+<div class="card"><span class="num">06</span><h3>Customer Experience Operations</h3><p>People-focused support processes designed around responsiveness, professionalism and a better end-customer journey.</p></div>
+</div></div></section>
 
-<section class="video-section">
-  <div class="section-head">
-    <div><p class="eyebrow">SKYRENZA IN MOTION</p><h2>See how we think about modern customer operations.</h2></div>
-    <p>These introductory videos are included as starter assets. They can later be replaced with branded client-case, team and service videos.</p>
-  </div>
-  <div class="video-grid">
-    <div class="video-card"><video controls preload="metadata" poster="assets/founder.jpg"><source src="assets/videos/skyrenza-introduction.mp4" type="video/mp4"></video><h3>SKYRENZA Introduction</h3><p>A concise introduction to the company vision and operating model.</p></div>
-    <div class="video-card"><video controls preload="metadata" poster="assets/founder.jpg"><source src="assets/videos/customer-support.mp4" type="video/mp4"></video><h3>Customer Support Model</h3><p>A visual overview of people, process, quality and performance.</p></div>
-  </div>
-</section>
+<section class="section"><div class="wrap"><div class="kicker"><div class="eyebrow">Why SKYRENZA</div><h2>People + Process + Technology + Reporting.</h2><p>A modern delivery approach without pretending to have capabilities that are not yet live. We combine skilled people, documented workflows, technology-enabled operations and agreed reporting as the business grows.</p></div><div class="grid3"><div class="card"><h3>People First</h3><p>Great customer experiences start with trained, supported and accountable people.</p></div><div class="card"><h3>Process Driven</h3><p>Clear workflows, ownership, quality checks and measurable expectations create consistency.</p></div><div class="card"><h3>Technology Enabled</h3><p>We use practical digital tools and structured data to support faster, more controlled operations.</p></div><div class="card"><h3>Transparent</h3><p>Communication and agreed performance expectations help create trust.</p></div><div class="card"><h3>Scalable</h3><p>Begin with a focused requirement and expand when the process is proven.</p></div><div class="card"><h3>Global Mindset</h3><p>An India-based delivery model designed to support businesses serving international customers.</p></div></div></div></section>
 
-<section id="technology" class="tech section">
-  <div class="tech-copy">
-    <p class="eyebrow">SKYRENZA INTELLIGENCE</p>
-    <h2>Human support, strengthened by technology.</h2>
-    <p>Our long-term model is technology-enabled: unified conversations, knowledge management, AI-assisted workflows, automation and performance visibility—without losing the human connection.</p>
-    <div class="feature-list">
-      <div><b>AI-assisted support</b><span>Response drafting, summaries, classification and routing.</span></div>
-      <div><b>Knowledge Center</b><span>Structured answers for customers and support teams.</span></div>
-      <div><b>Automation</b><span>Reduce repetitive work and improve consistency.</span></div>
-      <div><b>Analytics</b><span>Turn operational data into actionable insights.</span></div>
-    </div>
-  </div>
-  <div class="dashboard">
-    <div class="dash-top"><b>SKYRENZA SUPPORT HUB</b><span>LIVE VIEW</span></div>
-    <div class="metric-row"><div><small>Open Requests</small><strong>128</strong></div><div><small>First Response</small><strong>12m</strong></div><div><small>SLA</small><strong>98.4%</strong></div></div>
-    <div class="bars"><i style="width:82%"></i><i style="width:64%"></i><i style="width:91%"></i><i style="width:73%"></i></div>
-    <p>Client dashboards will be enabled as SKYRENZA implements the corresponding support systems.</p>
-  </div>
-</section>
+<section class="section" id="process"><div class="wrap"><div class="kicker"><div class="eyebrow">How We Work</div><h2>From conversation to dependable delivery.</h2><p>A simple, low-friction path designed to make outsourcing practical.</p></div><div class="steps"><div class="step"><strong>01 · DISCOVER</strong><small>Understand your customers, workflow, tools, volumes and goals.</small></div><div class="step"><strong>02 · DEFINE</strong><small>Agree scope, responsibilities, communication and success measures.</small></div><div class="step"><strong>03 · PILOT</strong><small>Where appropriate, start with a focused pilot to validate fit.</small></div><div class="step"><strong>04 · OPERATE</strong><small>Run the agreed workflow with clear ownership and tracking.</small></div><div class="step"><strong>05 · IMPROVE</strong><small>Review outcomes and refine the operating model.</small></div><div class="step"><strong>06 · SCALE</strong><small>Increase capacity or add processes when ready.</small></div></div></div></section>
 
-<section id="industries" class="section industries">
-  <div class="section-head"><div><p class="eyebrow">INDUSTRIES</p><h2>Built for businesses with customers to care for.</h2></div></div>
-  <div class="industry-grid">
-    <span>E-commerce & D2C</span><span>Technology & SaaS</span><span>Professional Services</span><span>Consumer Services</span><span>Startups & Scale-ups</span><span>Process-driven Businesses</span>
-  </div>
-</section>
+<section class="section"><div class="wrap"><div class="kicker"><div class="eyebrow">Who We Can Support</div><h2>Designed for growing, process-driven businesses.</h2></div><div class="grid3"><div class="card"><h3>E-commerce & D2C</h3><p>Order-related support, customer queries, returns coordination and post-purchase communication.</p></div><div class="card"><h3>Technology & SaaS</h3><p>Customer support, onboarding assistance, ticket handling and routine operations.</p></div><div class="card"><h3>Professional Services</h3><p>Administrative support, lead qualification and customer communication.</p></div><div class="card"><h3>Consumer Services</h3><p>Inbound support, appointment-related communication and service follow-up.</p></div><div class="card"><h3>Startups & Growing Businesses</h3><p>Flexible operational support while internal teams remain focused on product and growth.</p></div><div class="card"><h3>Other Process-driven Businesses</h3><p>Custom support for clearly defined workflows where an outsourced team can add capacity.</p></div></div></div></section>
 
-<section class="process section">
-  <div class="section-head"><div><p class="eyebrow">HOW IT WORKS</p><h2>A practical path from conversation to delivery.</h2></div></div>
-  <div class="steps">
-    <div><b>01</b><h3>Discover</h3><p>Understand customers, workflow, tools, volume and goals.</p></div>
-    <div><b>02</b><h3>Define</h3><p>Agree scope, ownership, service expectations and success measures.</p></div>
-    <div><b>03</b><h3>Pilot</h3><p>Where appropriate, validate process fit and delivery quality.</p></div>
-    <div><b>04</b><h3>Operate</h3><p>Run the agreed workflow with clear communication and reporting.</p></div>
-    <div><b>05</b><h3>Improve</h3><p>Review outcomes, identify improvements and refine the model.</p></div>
-    <div><b>06</b><h3>Scale</h3><p>Increase capacity or add processes when the operation is ready.</p></div>
-  </div>
-</section>
+<section class="section" id="founder"><div class="wrap"><div class="kicker"><div class="eyebrow">Founder & Company Leadership</div><h2>Abhijit Kale — Founder & CEO, SKYRENZA</h2><p>Building a people-focused outsourcing company from India for the global market.</p></div><div class="founder"><div><img class="new" src="assets/founder-new.jpg" alt="Abhijit Kale founder portrait"></div><div><p style="font-size:18px;color:#dceaff">Abhijit Kale founded SKYRENZA with a simple ambition: build a professional, relationship-driven outsourcing company where clients receive ownership, clear communication and dependable delivery.</p><p>With experience across <strong>13+ companies</strong> and <strong>4+ years in corporate environments</strong>, the founder's approach is shaped by exposure to different teams, business environments and customer expectations.</p><p>The philosophy is practical: understand the client's business, take ownership of agreed processes, communicate clearly, measure performance and earn the right to grow the relationship.</p><div class="statline"><div class="stat"><b>13+</b><span>companies across his professional journey</span></div><div class="stat"><b>4+</b><span>years in corporate environments</span></div><div class="stat"><b>1</b><span>founder-led vision for global delivery</span></div></div><p class="quote">“Business success is not only about technology or processes. It is about people.”</p></div></div><div class="banner"><img src="assets/skyrenza-founder-banner.png" alt="SKYRENZA founder global banner"></div></div></section>
 
-<section id="founder" class="founder section">
-  <div class="founder-photo"><img src="assets/founder.jpg" alt="Abhijit Kale, Founder and CEO of SKYRENZA"></div>
-  <div class="founder-copy">
-    <p class="eyebrow">FOUNDER & CEO</p>
-    <h2>Meet <span>Abhijit Kale</span></h2>
-    <p class="quote">“We are building SKYRENZA around a simple belief: business support should create measurable value while keeping people and customer experience at the center.”</p>
-    <p>Abhijit Kale founded SKYRENZA with the ambition to build an India-based outsourcing company for the global market. The operating philosophy is founder-led: understand the client's business, take ownership of agreed processes, communicate clearly, measure performance and earn the right to grow the relationship.</p>
-    <div class="signature">Abhijit Kale <small>Founder & CEO, SKYRENZA</small></div>
-  </div>
-</section>
+<section class="section" id="gallery"><div class="wrap"><div class="kicker"><div class="eyebrow">SKYRENZA Company & Office Visuals</div><h2>People, workplace and brand culture.</h2><p>These SKYRENZA-branded visuals are used to represent the people-first, professional operating environment behind the company.</p><div class="note">Visuals are brand/culture representations and should not be read as proof of a currently operating physical office location.</div></div><div class="gallery"><figure><img src="assets/office-support.jpg" alt="SKYRENZA customer support office visual"><figcaption>Customer support environment</figcaption></figure><figure><img src="assets/office-services.jpg" alt="SKYRENZA services office visual"><figcaption>Service operations environment</figcaption></figure><figure><img src="assets/team-culture.jpg" alt="SKYRENZA team culture visual"><figcaption>People and team culture</figcaption></figure><figure><img src="assets/workplace.jpg" alt="SKYRENZA workplace visual"><figcaption>Modern workplace visual</figcaption></figure></div></div></section>
 
-<section id="insights" class="section portal">
-  <div class="portal-box">
-    <div><p class="eyebrow">COMING AS WE SCALE</p><h2>SKYRENZA Client Portal</h2><p>A secure client workspace can bring requests, ticket history, knowledge resources, service updates and performance reporting into one place.</p></div>
-    <div class="portal-list"><span>✓ Request & ticket tracking</span><span>✓ Knowledge Center</span><span>✓ SLA & performance reports</span><span>✓ Service updates</span></div>
-  </div>
-</section>
+<section class="section"><div class="wrap"><div class="kicker"><div class="eyebrow">International Focus</div><h2>India delivery. Global ambition.</h2><p>SKYRENZA is positioned to support businesses in the USA, UK, Europe and other international markets from an India-based delivery model. Engagement details such as working hours, communication windows, staffing and service levels are agreed according to client needs.</p></div><div class="grid2"><div class="card"><h3>What Clients Gain</h3><p>Reduce operational load, improve consistency, scale with demand, extend capability, focus internal teams on higher-value priorities and create measurable operations.</p></div><div class="card"><h3>Ideal Starting Engagements</h3><p>Focused customer-support queues, email/chat support, repeatable back-office processes, lead qualification or a pilot engagement before broader outsourcing.</p></div></div></div></section>
 
-<section id="contact" class="contact section">
-  <div><p class="eyebrow">START A CONVERSATION</p><h2>Tell us what you want to outsource.</h2><p>Share your process, approximate workload, required coverage and key expectations. SKYRENZA can then assess a practical starting model.</p></div>
-  <form onsubmit="return submitLead(event)">
-    <input required name="name" placeholder="Your name">
-    <input required type="email" name="email" placeholder="Business email">
-    <input name="company" placeholder="Company">
-    <select name="service"><option>Customer Support</option><option>Email & Chat Support</option><option>Back-Office Operations</option><option>Lead Generation</option><option>Data Processing</option><option>Other</option></select>
-    <textarea name="message" rows="5" placeholder="Tell us about your requirement"></textarea>
-    <button class="btn primary" type="submit">Send Requirement</button>
-    <p id="form-note" class="form-note">Or email <b>skyrenzaglobal@gmail.com</b></p>
-  </form>
-</section>
+<section class="section" id="contact"><div class="wrap"><div class="kicker"><div class="eyebrow">Let's Start a Conversation</div><h2>Tell us what you want to outsource.</h2><p>Send the process, approximate workload, coverage window, current tools and key quality expectations. SKYRENZA will review the requirement and discuss a practical engagement structure.</p></div><div class="contact"><div class="contact-box"><h3>SKYRENZA</h3><p>BPO & Customer Experience Solutions</p><p><strong>Email:</strong> <a href="mailto:skyrenzaglobal@gmail.com">skyrenzaglobal@gmail.com</a></p><p><strong>Founder:</strong> Abhijit Kale</p><p><strong>Tagline:</strong> BUILD FROM INDIA. SERVE THE WORLD.</p></div><div class="contact-box"><h3>What to Send Us</h3><p>1. Process you want to outsource<br>2. Approximate workload or customer volume<br>3. Required working hours or coverage<br>4. Current tools or systems involved<br>5. Quality or performance expectations</p><a class="btn primary" href="mailto:skyrenzaglobal@gmail.com?subject=SKYRENZA%20Business%20Enquiry">Email SKYRENZA</a></div></div></div></section>
 </main>
-
-<footer>
-  <div class="brand"><span class="brand-mark">S</span><span>SKYRENZA</span></div>
-  <p>BPO & Customer Experience Solutions • Build from India. Serve the World.</p>
-  <p>© 2026 SKYRENZA. All rights reserved.</p>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer class="footer"><div class="wrap footer-row"><img src="assets/skyrenza-logo.png" alt="SKYRENZA logo"><div>© 2026 SKYRENZA. All rights reserved.<br>BPO & Customer Experience Solutions</div><div><a href="#home">Back to top ↑</a></div></div></footer>
+<script>document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));</script>
+</body></html>
