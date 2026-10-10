@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
+Sitemap: https://skyrenzaglobal-hash.github.io/SkyRenzaglobal/sitemap.xml

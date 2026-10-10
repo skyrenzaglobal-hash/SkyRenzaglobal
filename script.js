@@ -1,21 +1,7 @@
-
-function submitLead(e){
-  e.preventDefault();
-  const f=e.target;
-  const data=new FormData(f);
-  const subject=encodeURIComponent("SKYRENZA business enquiry - "+(data.get("service")||""));
-  const body=encodeURIComponent(
-    "Name: "+data.get("name")+"\n"+
-    "Business email: "+data.get("email")+"\n"+
-    "Company: "+data.get("company")+"\n"+
-    "Service: "+data.get("service")+"\n\n"+
-    "Requirement:\n"+data.get("message")
-  );
-  window.location.href="mailto:skyrenzaglobal@gmail.com?subject="+subject+"&body="+body;
-  document.getElementById("form-note").textContent="Your email app should now open with the requirement prepared.";
-  return false;
-}
-document.querySelector(".menu")?.addEventListener("click",()=>{
-  document.querySelector(".links").style.display =
-    document.querySelector(".links").style.display==="flex" ? "none" : "flex";
-});
+(function(){
+  const year=document.getElementById('year'); if(year) year.textContent=new Date().getFullYear();
+  const menu=document.querySelector('.menu-btn'); const nav=document.querySelector('.navlinks');
+  if(menu&&nav){menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰';});}
+  const form=document.getElementById('contactForm');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();const d=new FormData(form);const subject='SKYRENZA website inquiry — '+d.get('service');const body=[`Name: ${d.get('name')}`,`Company: ${d.get('company')||'Not provided'}`,`Email: ${d.get('email')}`,`Country / time zone: ${d.get('country')||'Not provided'}`,`Service: ${d.get('service')}`,'',`Requirements: ${d.get('message')}`].join('\n');const status=document.getElementById('formStatus');if(status)status.textContent='Opening your email app. Review the message and press Send to submit your inquiry.';window.location.href='mailto:Skyrenzaglobal@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);});}
+})();
