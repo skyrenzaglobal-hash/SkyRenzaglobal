@@ -1,40 +1,22 @@
-SKYRENZA WEBSITE REFRESH — DEPLOYMENT PACKAGE
+SKYRENZA WEBSITE — FOUNDER IMAGE VISIBILITY FIX
 ================================================
 
-This is a static HTML/CSS/JavaScript website refresh prepared for the existing
-GitHub Pages site. It uses locally stored, optimized JPG copies of the images
-you supplied, instead of fragile remote image URLs.
+This version keeps the existing website design and fixes image paths to use files in the repository root. This makes the image upload step simpler and avoids a missing assets-folder problem.
 
-FILES
-- index.html        Main website and SEO metadata
-- styles.css        Responsive styling for desktop and mobile
-- script.js         Mobile navigation and demo FAQ assistant
-- assets/           Optimized local brand, founder and office images
+IMPORTANT: downloading this ZIP does not change the live website. You must upload the files to GitHub and commit them.
 
-IMPORTANT ABOUT THE AI ASSISTANT
-The “Ask SKYRENZA” panel is a front-end FAQ demo, not a live AI model, CRM,
-ticketing system or staffed support inbox. Do not advertise it as a live AI
-service until an AI/API backend and privacy controls are connected.
-
-UPDATE THE EXISTING WEBSITE
+UPLOAD STEPS (PHONE OR COMPUTER)
 1. Open https://github.com/skyrenzaglobal-hash/SkyRenzaglobal
-2. Make sure you are on the main branch.
-3. Download a backup of the current repository before replacing anything.
-4. Upload/replace index.html, styles.css and script.js at the repository root.
-5. Upload the whole assets folder and all files inside it. Keep filenames exact.
-6. Commit the changes to main.
-7. Wait for GitHub Pages to deploy, then open:
-   https://skyrenzaglobal-hash.github.io/SkyRenzaglobal/
-8. If the old version remains, hard refresh or clear the browser cache.
+2. Open the main branch and make a backup/download of your current files first.
+3. Upload/replace index.html, styles.css and script.js in the repository root.
+4. Upload ALL eight JPG files included at the root of this ZIP (same level as index.html):
+   founder-banner.jpg, founder-office.jpg, founder-branding.jpg, founder-flags.jpg,
+   skyrenza-logo.jpg, office-lounge.jpg, office-values.jpg, office-reception.jpg
+5. Commit the changes to main. Wait for GitHub Pages to publish.
+6. Open https://skyrenzaglobal-hash.github.io/SkyRenzaglobal/ and refresh.
 
-This package does not modify the live GitHub repository automatically. The site
-will change only after these files are uploaded and committed to GitHub.
+The assets/ folder is also included as a backup, but this fixed index.html points to the root-level JPG files. Do not rename the image files. GitHub Pages paths are case-sensitive.
 
-CONTACT DETAILS INCLUDED
-skyrenzaglobal@gmail.com
-+91 62394 96472
+Contact: skyrenzaglobal@gmail.com | +91 62394 96472
 
-CONTENT / CLAIMS
-The website avoids invented client logos, testimonials, certifications, service
-metrics and unverified 24/7 claims. Add these only when they are accurate and
-approved for publication.
+AI NOTE: The “Ask SKYRENZA” panel is a front-end FAQ demo, not a live AI model. A secure backend is required for real AI.
