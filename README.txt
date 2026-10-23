@@ -1,47 +1,22 @@
-SKYRENZA PROFESSIONAL WEBSITE REFRESH
-====================================
+SKYRENZA WEBSITE — FOUNDER IMAGE VISIBILITY FIX
+================================================
 
-PACKAGE CONTENTS
-- index.html
-- styles.css
-- script.js
-- assets/founder-speaking.png
-- assets/founder-standing.png
-- assets/founder-office.png
-- assets/office-interior.jpg
-- assets/company-values.jpg
-- assets/favicon.svg
+This version keeps the existing website design and fixes image paths to use files in the repository root. This makes the image upload step simpler and avoids a missing assets-folder problem.
 
-IMAGE DISPLAY
-- The images in this package are the five photos supplied in the current conversation.
-- Every page image uses a local relative path starting with assets/.
-- Founder portraits use their original aspect ratio; the key founder photos are not forced into a short fixed-height crop.
-- Upload the whole assets folder. Do not rename the folder or image files; spelling and capitalization must match.
+IMPORTANT: downloading this ZIP does not change the live website. You must upload the files to GitHub and commit them.
 
-PUBLISH TO THE EXISTING GITHUB PAGES WEBSITE
+UPLOAD STEPS (PHONE OR COMPUTER)
 1. Open https://github.com/skyrenzaglobal-hash/SkyRenzaglobal
-2. Back up your current index.html, styles.css and script.js before replacing anything.
-3. Upload/replace index.html, styles.css and script.js from this package in the repository's main/root folder.
-4. Upload all files inside this package's assets folder into a repository folder named assets. The final paths must include:
-   assets/founder-speaking.png
-   assets/founder-standing.png
-   assets/founder-office.png
-   assets/office-interior.jpg
-   assets/company-values.jpg
-   assets/favicon.svg
-5. Commit the changes to the main branch.
-6. Wait for GitHub Pages to publish, then open https://skyrenzaglobal-hash.github.io/SkyRenzaglobal/
-7. Refresh. If the old version remains, try a private/incognito tab or clear the browser cache.
+2. Open the main branch and make a backup/download of your current files first.
+3. Upload/replace index.html, styles.css and script.js in the repository root.
+4. Upload ALL eight JPG files included at the root of this ZIP (same level as index.html):
+   founder-banner.jpg, founder-office.jpg, founder-branding.jpg, founder-flags.jpg,
+   skyrenza-logo.jpg, office-lounge.jpg, office-values.jpg, office-reception.jpg
+5. Commit the changes to main. Wait for GitHub Pages to publish.
+6. Open https://skyrenzaglobal-hash.github.io/SkyRenzaglobal/ and refresh.
 
-FEATURES AND IMPORTANT LIMITATIONS
-- Responsive layout for phones, tablets, laptops and desktop.
-- Company services, industries, values, founder profiles, FAQ, contact section and a website-information chat demo.
-- Contact form prepares an email through the visitor's own email app; it does not save or send information through a server.
-- The SKYRENZA Guide is a front-end FAQ demo with preset responses, not a connected live AI model. A production AI assistant requires a secure backend and an AI provider. Never put secret API keys in public JavaScript.
-- No client counts, certifications, office locations or performance statistics have been invented.
-- Office images are brand visuals, not proof of a confirmed physical office address.
+The assets/ folder is also included as a backup, but this fixed index.html points to the root-level JPG files. Do not rename the image files. GitHub Pages paths are case-sensitive.
 
-WEBSITE DESIGN RESEARCH (inspiration only; no copied source code)
-- Pylon: https://www.usepylon.com/
-- Concentrix customer care: https://www.concentrix.com/services-solutions/customer-care/
-- Foundever services: https://foundever.com/services/
+Contact: skyrenzaglobal@gmail.com | +91 62394 96472
+
+AI NOTE: The “Ask SKYRENZA” panel is a front-end FAQ demo, not a live AI model. A secure backend is required for real AI.
